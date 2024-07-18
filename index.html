@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script defer src="main.js"></script>
+
+<title>Document</title>
+</head>
+<body>
+  <main>
+    <aside>
+      <ul class="Links"">
+        <li onClick='Navigate(0)' class="activeLink"><i class="fa-solid fa-house"></i><p>Home</p></li>
+        <li onClick='Navigate(1)'><i class="fa-solid fa-user"></i><p>About Me</p></li>
+        <li onClick='Navigate(2)'><i class="fa-solid fa-list"></i><p>Services</p></li>
+        <li onClick='Navigate(3)'><i class="fa-solid fa-images"></i><p>Gallery</p></li>
+        <li onClick='Navigate(4)'><i class="fa-solid fa-comments"></i><p>Contact Me</p></li>
+      </ul>
+    </aside>
+    <div class="swiper mySwiper">
+      <div class="SlideContainer swiper-wrapper">
+        <div class="swiper-slide home-slide">
+          <div class="HomeContent">
+            <h1> Hi I'm <span class="stylized-name">Ilyes</span></h1>
+            <h2> A <span class="proffesions">Développeur Web</span></h2>
+            <p class="heroline">Lorem Lorem Lorem Lorem Lorem</p> 
+            <div class="buttonGroup"><button>Voir plus</button><button>Contact</button></div>
+          </div>
+          <div class="SideImg">
+            <div class="top-righ-corner">
+              <hr>
+              <hr>
+            </div>
+            <img src="https://www.google.com/imgres?q=img&imgurl=https%3A%2F%2Fcdn.getyourguide.com%2Fimg%2Ftour%2Fafb63bbe5fadc90fc8eabc2e3004935de7535c16a71278160ce88c8bd813a65d.jpg%2F145.jpg&imgrefurl=https%3A%2F%2Fwww.getyourguide.fr%2Fdubai-l173%2Fdubai-img-worlds-of-adventure-transferts-gratuits-vers-l-hotel-t490920%2F&docid=PDDaYLzoni_FlM&tbnid=0_-4TpcEO8fGcM&vet=12ahUKEwi504rVoK-HAxU5TKQEHbFLBF4QM3oECGAQAA..i&w=960&h=600&hcb=2&ved=2ahUKEwi504rVoK-HAxU5TKQEHbFLBF4QM3oECGAQAA" alt="" />
+            <div class="bottom-left-corner">
+              <hr>
+              <hr>
+            </div>
+          </div>
+          <p class="slide-help">Scroll pour une nouvelle page<i class="fa-solid fa-chevron-right fa-shake"></i></p>
+        </div>
+
+        <div class="swiper-slide about-us">
+          <h1 class="heading">About Me</h1>
+          <h3 class="sub-heading">Je suis Ilyes, <span class="proffesions"> Un Développeur web</span></h3>
+          <p class="aboutme-deatils">Lorem lorem lorem lorem lorem lorem</p>
+          <div class="about-me-division">
+            <div class="about-me-table">
+              <ul>
+                <li><span>Experince</span> 1 an</li>
+                <li><span>Experince</span> 1 an</li>
+                <li><span>Experince</span> 1 an</li>
+                <li><span>Experince</span> 1 an</li>
+                <li><span>Experince</span> 1 an</li>
+                <li><span>Experince</span> 1 an</li>
+                <li><span>Experince</span> 1 an</li>
+                <li><span>Experince</span> 1 an</li>
+              </ul>
+              <div class="buttonGroup"><button>Hire Me</button><button>Contact</button></div>
+            </div>
+            <div class="skill-bar">
+              <ul>
+                <li>
+                  <p>HTML</p>
+                  <div class="bar">
+                    <div class="activate-bar" style="width:99%"></div>
+                  </div>
+                </li>
+                <li>
+                  <p>CSS</p>
+                  <div class="bar">
+                    <div class="activate-bar" style="width:88%"></div>
+                  </div>
+                </li>
+                <li>
+                  <p>JavaScript</p>
+                  <div class="bar">
+                    <div class="activate-bar" style="width:85%"></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Python</p>
+                  <div class="bar">
+                    <div class="activate-bar" style="width:50%"></div>
+                  </div>
+                </li>
+                <li>
+                  <p>PHP</p>
+                  <div class="bar">
+                    <div class="activate-bar" style="width:68%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide services">
+          <h1 class="heading">Services</h1>
+          <div class="service">
+            <div class="services-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h2> Web design</h2>
+            <p>Lorem lorem lorem lorem</p>
+          </div>
+          <!-- Ajoutez d'autres services ici -->
+        </div>
+
+        <div class="swiper-slide gallery">
+          <h1 class="heading">Gallery</h1>
+          <div class="project"><img src="https://www.google.com/imgres?q=img&imgurl=https%3A%2F%2Fcdn.getyourguide.com%2Fimg%2Ftour%2Fafb63bbe5fadc90fc8eabc2e3004935de7535c16a71278160ce88c8bd813a65d.jpg%2F145.jpg&imgrefurl=https%3A%2F%2Fwww.getyourguide.fr%2Fdubai-l173%2Fdubai-img-worlds-of-adventure-transferts-gratuits-vers-l-hotel-t490920%2F&docid=PDDaYLzoni_FlM&tbnid=0_-4TpcEO8fGcM&vet=12ahUKEwi504rVoK-HAxU5TKQEHbFLBF4QM3oECGAQAA..i&w=960&h=600&hcb=2&ved=2ahUKEwi504rVoK-HAxU5TKQEHbFLBF4QM3oECGAQAA" alt="" /></div>
+          <!-- Ajoutez d'autres images de la galerie ici -->
+        </div>
+
+        <div class="swiper-slide contactMe">
+          <h1 class="heading">Contact Me</h1>
+          <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+            <h3>Mobile</h3>
+            <p>078457596</p>
+          </div>
+          <!-- Ajoutez d'autres informations de contact ici -->
+          <form>
+            <h2>Envoyez moi un message</h2>
+            <div class="SocialLinks">
+              <i class="fa-brands fa-instagram"></i>
+              <!-- Ajoutez d'autres liens sociaux ici -->
+            </div>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="email">
+            <textarea rows="10" placeholder="Type your Message Here..."></textarea>
+            <button class="primary">Send</button>
+          </form>
+          <footer>
+            <ul>
+              <li>Copyright 2024 Zinho</li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
