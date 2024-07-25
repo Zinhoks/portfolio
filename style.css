@@ -79,7 +79,8 @@
   
   .SideImg img {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 50%
   }
   
   .SideImg .top-right-corner,
@@ -354,8 +355,24 @@
     border-radius: 10px;
     object-fit: cover;
     border: none;
+    display: block; /* S'assure que les images se comportent comme des blocs */
+    max-width: 100%; /* Assure que les images ne débordent pas de leur conteneur */
+    height: auto; /* Maintient le ratio d'aspect des images */
   }
-  
+
+  .project p {
+    font-size: 1em;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+    margin: 10px 0 0;
+    padding: 0 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+  .gallery .project:not(:last-child) {
+    margin-right: 10px; /* Ajoute un espace de 10px entre les projets sauf le dernier */
+}
   .contactMe {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -484,3 +501,9 @@
   .about-us {
     overflow: auto;
   }
+
+  .projects-container {
+    display: flex;
+    gap: 20px; 
+}
+
